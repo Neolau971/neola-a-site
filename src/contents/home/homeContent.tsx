@@ -1,6 +1,5 @@
 import { Carousel } from "antd"
 import React from "react"
-import './content.component.css'
 
 const contentStyle = {
   height: '750px',
@@ -9,7 +8,7 @@ const contentStyle = {
   background: '#364d79',
 };
 
-const ContentComponent: React.FC = () => {
+const HomeContent: React.FC = () => {
   return (
     <Carousel autoplay>
       <div>
@@ -28,4 +27,4 @@ const ContentComponent: React.FC = () => {
   )
 }
 
-export default React.memo(ContentComponent)
+export default React.memo(HomeContent)
