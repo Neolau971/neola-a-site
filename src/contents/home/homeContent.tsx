@@ -1,27 +1,21 @@
 import { Carousel } from "antd"
 import React from "react"
-
-const contentStyle = {
-  height: '750px',
-  color: '#fff',
-  lineHeight: '160px',
-  background: '#364d79',
-};
+import defile from '../../pictures/defile_TLS.jpg'
+import robe_rouge from '../../pictures/robe_rouge.jpg'
+import tenue_casino from '../../pictures/tenue_casino.jpg'
 
 const HomeContent: React.FC = () => {
+
   return (
     <Carousel autoplay>
       <div>
-        <h3 style={contentStyle}>1</h3>
+        <img src={defile} alt="slide 1" />
       </div>
       <div>
-        <h3 style={contentStyle}>2</h3>
+        <img src={robe_rouge} alt="slide 1" />
       </div>
       <div>
-        <h3 style={contentStyle}>3</h3>
-      </div>
-      <div>
-        <h3 style={contentStyle}>4</h3>
+        <img src={tenue_casino} alt="slide 1" />
       </div>
     </Carousel>
   )
