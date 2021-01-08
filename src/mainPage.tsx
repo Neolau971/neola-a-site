@@ -1,3 +1,4 @@
+import { Divider } from "antd";
 import Layout, { Content } from "antd/lib/layout/layout";
 import React, { useState } from "react";
 import HeaderMenuComponent from "./components/menu/header-menu.component";
@@ -7,7 +8,7 @@ import DiplomeContent from "./contents/diplome/diplomeContent";
 import HistoricContent from "./contents/historic/historicContent";
 import HomeContent from "./contents/home/homeContent";
 import ServiceContent from "./contents/service/serviceContent";
-
+import './mainPage.css'
 function MainPage() {
 
   const [isHome, setIsHome] = useState(true)
@@ -82,6 +83,7 @@ function MainPage() {
             {isHistoric && <HistoricContent />}
             {isService && <ServiceContent />}
           </Content>
+          <Divider plain>Copyright Alietta Creation - Tous droits réservés</Divider>
         </Layout>
       </Layout>
     </Layout>
