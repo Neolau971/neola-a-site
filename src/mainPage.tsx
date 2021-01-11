@@ -68,22 +68,24 @@ function MainPage() {
       <HeaderMenuComponent handleContent={handleContent} />
       <Layout>
         <SideMenuComponent handleContent={handleContent} />
-        <Layout style={{ padding: '0 24px 24px' }}>
-          <Content
-            className="site-layout-background"
-            style={{
-              padding: 24,
-              margin: 0,
-              minHeight: 280,
-            }}
-          >
-            {isHome && <HomeContent />}
-            {isContacts && <ContactContent />}
-            {isDiplome && <DiplomeContent />}
-            {isHistoric && <HistoricContent />}
-            {isService && <ServiceContent />}
-          </Content>
-          <Divider plain>Copyright Alietta Creation - Tous droits réservés</Divider>
+        <Layout className='content'>
+          <div className='defaultHeight'>
+            <Content
+              className="site-layout-background"
+              style={{
+                padding: 24,
+                margin: 0,
+                minHeight: 280,
+              }}
+            >
+              {isHome && <HomeContent />}
+              {isContacts && <ContactContent />}
+              {isDiplome && <DiplomeContent />}
+              {isHistoric && <HistoricContent />}
+              {isService && <ServiceContent />}
+            </Content>
+          </div>
+          <Divider plain style={{ color: 'white' }}>Copyright Alietta Creation - Tous droits réservés</Divider>
         </Layout>
       </Layout>
     </Layout>

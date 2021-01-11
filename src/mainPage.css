@@ -4,3 +4,12 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+.defaultHeight {
+  height: 80vh;
+}
+
+.content {
+  padding: '0 24px 24px';
+  background-color: rebeccapurple;
+}

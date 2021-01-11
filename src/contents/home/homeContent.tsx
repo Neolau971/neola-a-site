@@ -11,7 +11,7 @@ const HomeContent: React.FC = () => {
       <div>
         <div style={{ display: "flex", justifyContent: 'space-around' }}>
           <img src={defile} alt="slide 1" />
-          <div> Le défiler réaliser à Toulouse, je n'y était pas</div>
+          <div style={{ color: 'white' }}> Le défiler réaliser à Toulouse, je n'y était pas</div>
         </div>
       </div>
       <div>
