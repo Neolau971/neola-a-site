@@ -2,5 +2,10 @@
 .App {
   text-align: center;
   height: 100vh;
+  background-color: #001529;
 }
 
+.AppText {
+  color: white;
+  font-weight: bold;
+}

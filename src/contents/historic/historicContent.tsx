@@ -2,8 +2,8 @@ import { Divider } from 'antd';
 
 function HistoricContent() {
   return (
-    <>
-      <Divider plain>Histoire de l'entreprise</Divider>
+    <div className="AppText">
+      <Divider plain><h2 className="AppText">Histoire de l'entreprise</h2></Divider>
       <p>
         Alietta céatiiOn à été créé en 2011, à Sainte-Anne en Guadeloupe,
         avec pour but, promouvoir et développer le monde de la mode.
@@ -14,7 +14,7 @@ function HistoricContent() {
         Ainsi c'est avec un grand succès que cet objectif est réalisé
         depuis plus de 6 ans.
       </p>
-    </>
+    </div>
   )
 }
 

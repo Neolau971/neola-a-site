@@ -85,7 +85,9 @@ function MainPage() {
               {isService && <ServiceContent />}
             </Content>
           </div>
-          <Divider plain style={{ color: 'white' }}>Copyright Alietta Creation - Tous droits réservés</Divider>
+          <Divider plain>
+            <div className='AppText'>Copyright Alietta Creation - Tous droits réservés</div>
+          </Divider>
         </Layout>
       </Layout>
     </Layout>
