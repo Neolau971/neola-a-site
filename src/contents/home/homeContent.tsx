@@ -11,14 +11,20 @@ const HomeContent: React.FC = () => {
       <div>
         <div style={{ display: "flex", justifyContent: 'space-around' }}>
           <img src={defile} alt="slide 1" />
-          <div className="AppText"> Le défiler réaliser à Toulouse, je n'y était pas</div>
+          <div className="AppText"> Le défiler réaliser à Toulouse, je n'y était pas...</div>
         </div>
       </div>
       <div>
-        <img src={robe_rouge} alt="slide 1" />
+        <div style={{ display: "flex", justifyContent: 'space-around' }}>
+          <img src={robe_rouge} alt="slide 1" />
+          <div className="AppText"> Une robe rouge...</div>
+        </div>
       </div>
       <div>
-        <img src={tenue_casino} alt="slide 1" />
+        <div style={{ display: "flex", justifyContent: 'space-around' }}>
+          <img src={tenue_casino} alt="slide 1" />
+          <div className="AppText"> Ma mère et une tenu faite pour le casino de ste françois...</div>
+        </div>
       </div>
     </Carousel>
   )
