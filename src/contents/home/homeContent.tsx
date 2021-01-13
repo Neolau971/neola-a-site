@@ -7,7 +7,7 @@ import tenue_casino from '../../pictures/tenue_casino.jpg'
 const HomeContent: React.FC = () => {
 
   return (
-    <Carousel autoplay>
+    <Carousel autoplay dotPosition={'right'}>
       <div>
         <div style={{ display: "flex", justifyContent: 'space-around' }}>
           <img src={defile} alt="slide 1" />
