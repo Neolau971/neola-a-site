@@ -16,7 +16,6 @@ const SideMenuComponent: React.FC<SideMenuProps> = ({ handleContent }) => {
 
   return (
     <Sider width={300} className="site-layout-background">
-      <div style={{ float: 'left', width: '120px', height: '31px', backgroundColor: 'white' }}>Adpgj</div>
       <Menu
         mode="inline"
         style={{ height: '100%', borderRight: 0 }}

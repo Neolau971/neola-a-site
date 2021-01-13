@@ -1,5 +1,6 @@
 import { Menu } from "antd"
 import { Header } from "antd/lib/layout/layout"
+import { ScissorOutlined, SkinOutlined } from '@ant-design/icons';
 import React from "react"
 
 type HeaderMenuProps = {
@@ -14,6 +15,20 @@ const HeaderMenuComponent: React.FC<HeaderMenuProps> = ({ handleContent }) => {
 
   return (
     <Header className="header">
+      <div style={{
+        float: 'left',
+        width: '200px',
+        height: '31px',
+        backgroundColor: 'white',
+        margin: '20px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}>
+        <ScissorOutlined />
+        <span style={{ fontWeight: 'bold', margin: 'inherit' }}>Alietta CreatiiOn</span>
+        <SkinOutlined />
+      </div>
       <Menu
         theme="dark"
         mode="horizontal"
