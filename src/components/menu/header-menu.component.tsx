@@ -14,19 +14,20 @@ const HeaderMenuComponent: React.FC<HeaderMenuProps> = ({ handleContent }) => {
   }
 
   return (
-    <Header className="header">
+    <Header style={{ padding: '0px' }}>
       <div style={{
         float: 'left',
         width: '200px',
         height: '31px',
         backgroundColor: 'white',
         margin: '20px',
+        marginRight: '80px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
       }}>
         <ScissorOutlined />
-        <span style={{ fontWeight: 'bold', margin: 'inherit' }}>Alietta CreatiiOn</span>
+        <span style={{ fontWeight: 'bold', margin: '10px', fontSize: 'larger', color: 'rebeccapurple' }}>Alietta CreatiiOn</span>
         <SkinOutlined />
       </div>
       <Menu
