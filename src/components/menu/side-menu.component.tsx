@@ -10,8 +10,7 @@ type SideMenuProps = {
 const SideMenuComponent: React.FC<SideMenuProps> = ({ handleContent }) => {
 
   const handleClick = (e: any) => {
-    console.log(e.key)
-    //handleContent(e.key)
+    handleContent(e.key)
   }
 
   return (
