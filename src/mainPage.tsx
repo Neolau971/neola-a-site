@@ -7,59 +7,38 @@ import ContactContent from "./contents/contacts/contactsContent";
 import DiplomeContent from "./contents/diplome/diplomeContent";
 import HistoricContent from "./contents/historic/historicContent";
 import HomeContent from "./contents/home/homeContent";
-import ServiceContent from "./contents/service/serviceContent";
 import './mainPage.css'
+
+
+
 function MainPage() {
 
   const [isHome, setIsHome] = useState(true)
   const [isContacts, setIsContacts] = useState(false)
   const [isDiplome, setIsDiplome] = useState(false)
   const [isHistoric, setIsHistoric] = useState(false)
-  const [isService, setIsService] = useState(false)
 
   const handleContent = (key: string) => {
+    setIsHome(false)
+    setIsContacts(false)
+    setIsDiplome(false)
+    setIsHistoric(false)
+
     switch (key) {
       case 'Home':
         setIsHome(true)
-        setIsContacts(false)
-        setIsDiplome(false)
-        setIsHistoric(false)
-        setIsService(false)
         break
       case 'Contacts':
-        setIsHome(false)
         setIsContacts(true)
-        setIsDiplome(false)
-        setIsHistoric(false)
-        setIsService(false)
         break
       case 'Diplome':
-        setIsHome(false)
-        setIsContacts(false)
         setIsDiplome(true)
-        setIsHistoric(false)
-        setIsService(false)
         break
       case 'Historic':
-        setIsHome(false)
-        setIsContacts(false)
-        setIsDiplome(false)
         setIsHistoric(true)
-        setIsService(false)
-        break
-      case 'Service':
-        setIsHome(false)
-        setIsContacts(false)
-        setIsDiplome(false)
-        setIsHistoric(false)
-        setIsService(true)
         break
       default:
         setIsHome(true)
-        setIsContacts(false)
-        setIsDiplome(false)
-        setIsHistoric(false)
-        setIsService(false)
     }
   }
 
@@ -82,7 +61,6 @@ function MainPage() {
               {isContacts && <ContactContent />}
               {isDiplome && <DiplomeContent />}
               {isHistoric && <HistoricContent />}
-              {isService && <ServiceContent />}
             </Content>
           </div>
           <Divider plain>
