@@ -1,4 +1,9 @@
 import { Menu } from "antd"
+import {
+  InfoCircleOutlined,
+  FileDoneOutlined,
+  FolderOpenOutlined
+} from '@ant-design/icons';
 import Sider from "antd/lib/layout/Sider"
 import SubMenu from "antd/lib/menu/SubMenu"
 import React from "react"
@@ -20,8 +25,9 @@ const SideMenuComponent: React.FC<SideMenuProps> = ({ handleContent }) => {
         style={{ height: '100%', borderRight: 0 }}
         onClick={handleClick}
       >
-        <Menu.Item key="Diplome">Diplômes</Menu.Item>
-        <Menu.Item key="Historic">Historique de l'entreprise</Menu.Item>
+        <Menu.Item key="Apropos"><InfoCircleOutlined />À propos</Menu.Item>
+        <Menu.Item key="Diplome"><FileDoneOutlined />Diplômes</Menu.Item>
+        <Menu.Item key="Historic"><FolderOpenOutlined />Historique de l'entreprise</Menu.Item>
         <SubMenu title="Services proposés">
           <Menu.Item key="couturePerso">Couture sur mesure et personnalisée</Menu.Item>
           <Menu.Item key="transfo">Transformation de vêtement</Menu.Item>

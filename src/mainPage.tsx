@@ -10,15 +10,16 @@ import './mainPage.css'
 
 function MainPage() {
 
-  const [isHome, setIsHome] = useState(true)
-  const [isContacts, setIsContacts] = useState(false)
-  const [isDiplome, setIsDiplome] = useState(false)
-  const [isHistoric, setIsHistoric] = useState(false)
-  const [isTransfo, setIsTransfo] = useState(false)
-  const [isCours, setIsCours] = useState(false)
-  const [isCoutureArti, setIsCoutureArti] = useState(false)
-  const [isCouturePesro, setIsCouturePesro] = useState(false)
-  const [isRetouches, setIsRetouches] = useState(false)
+  const [isHome, setIsHome] = useState<boolean>(true)
+  const [isContacts, setIsContacts] = useState<boolean>(false)
+  const [isDiplome, setIsDiplome] = useState<boolean>(false)
+  const [isHistoric, setIsHistoric] = useState<boolean>(false)
+  const [isTransfo, setIsTransfo] = useState<boolean>(false)
+  const [isCours, setIsCours] = useState<boolean>(false)
+  const [isCoutureArti, setIsCoutureArti] = useState<boolean>(false)
+  const [isCouturePesro, setIsCouturePesro] = useState<boolean>(false)
+  const [isRetouches, setIsRetouches] = useState<boolean>(false)
+  const [isAPropos, setIsAPropos] = useState<boolean>(false)
 
   const handleContent = (key: string) => {
     setIsHome(false)
@@ -30,6 +31,7 @@ function MainPage() {
     setIsCoutureArti(false)
     setIsCouturePesro(false)
     setIsRetouches(false)
+    setIsAPropos(false)
 
     switch (key) {
       case 'Home':
@@ -58,6 +60,9 @@ function MainPage() {
         break
       case 'cours':
         setIsCours(true)
+        break
+      case 'Apropos':
+        setIsAPropos(true)
         break
       default:
         setIsHome(true)
@@ -89,6 +94,7 @@ function MainPage() {
                 isCoutureArti={isCoutureArti}
                 isCouturePesro={isCouturePesro}
                 isRetouches={isRetouches}
+                isAPropos={isAPropos}
               />}
             </Content>
           </div>

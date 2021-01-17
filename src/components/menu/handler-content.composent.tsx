@@ -1,4 +1,5 @@
 import React from "react"
+import AProposContent from "../../contents/autre/aProposContent"
 import ContactContent from "../../contents/contacts/contactsContent"
 import DiplomeContent from "../../contents/diplome/diplomeContent"
 import HistoricContent from "../../contents/historic/historicContent"
@@ -19,6 +20,7 @@ type HandlerContentCompoProps = {
   isCoutureArti: boolean
   isCouturePesro: boolean
   isRetouches: boolean
+  isAPropos: boolean
 }
 
 const HandlerContentComposent: React.FC<HandlerContentCompoProps> = ({
@@ -30,7 +32,8 @@ const HandlerContentComposent: React.FC<HandlerContentCompoProps> = ({
   isCours,
   isCoutureArti,
   isCouturePesro,
-  isRetouches
+  isRetouches,
+  isAPropos
 }) => {
 
   return (
@@ -44,6 +47,7 @@ const HandlerContentComposent: React.FC<HandlerContentCompoProps> = ({
       {isCoutureArti && <CoutureArtisanalContent />}
       {isCouturePesro && <CouturePersonaliseContent />}
       {isRetouches && <RetouchesContent />}
+      {isAPropos && <AProposContent />}
     </>)
 }
 
