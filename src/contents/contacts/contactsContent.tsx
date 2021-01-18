@@ -18,20 +18,24 @@ const styles = {
   fontSize: 'medium'
 }
 
+const iconStyle = {
+  fontSize: '20px'
+}
+
 function ContactContent() {
   return (
     <div className="AppText">
       <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Contacts</div></Divider>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <p>
-          <HomeOutlined />
+          <HomeOutlined style={iconStyle} />
           <div style={styles}>{text1}</div>
           <div style={styles}>{text2}</div>
-          <PhoneOutlined />
+          <PhoneOutlined style={iconStyle} />
           <div style={styles}>{text3}</div>
-          <MailOutlined />
+          <MailOutlined style={iconStyle} />
           <div style={styles}>{text4}</div>
-          <FacebookOutlined />
+          <FacebookOutlined style={iconStyle} />
           <div
             style={styles}>{text5}
             <a style={{ marginLeft: '5px' }} href="https://www.facebook.com/aliette.neola">
