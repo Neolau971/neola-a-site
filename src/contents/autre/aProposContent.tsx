@@ -2,11 +2,12 @@ import { Divider, Row, Col } from "antd"
 import React from "react"
 import profile from '../../pictures/profile.jpg'
 
-const text1 = "Le CEO et Créatrice De Mode après avoir étudié dans l'école de haute"
-const text2 = "couture de Toulouse en 2004, à lancé Alietta création en 2011."
-const text3 = "Cette entreprise qui évolue dans l'industrie de l'habillement"
-const text4 = "à su évolué et trouvé ça place dans la société guadeloupéenne et compte"
-const text5 = "de nombreux clients satisfait."
+const text0 = "Ayant déjà de l'expérience dans le domaine de la mode de par son passé"
+const text1 = "de mannequin et après avoir étudié dans l'école de haute couture de Toulouse"
+const text2 = "en 2004, le PDG et Créatrice De Mode a lancé Alietta Création en 2011."
+const text3 = "Cette entreprise qui évolue dans l'industrie de l'habillement a su évoluer"
+const text4 = "et trouver sa place dans la société guadeloupéenne et compte de nombreux"
+const text5 = "clients satisfaits."
 
 const styles = {
   margin: '20px',
@@ -28,6 +29,7 @@ function AProposContent() {
         <Row>
           <Col>
             <p>
+              <div style={styles}>{text0}</div>
               <div style={styles}>{text1}</div>
               <div style={styles}>{text2}</div>
               <div style={styles}>{text3}</div>
