@@ -1,4 +1,8 @@
 import { Menu } from "antd"
+import {
+  InfoCircleOutlined,
+  PhoneOutlined
+} from '@ant-design/icons';
 import { Header } from "antd/lib/layout/layout"
 import { ScissorOutlined, SkinOutlined } from '@ant-design/icons';
 import React from "react"
@@ -33,11 +37,10 @@ const HeaderMenuComponent: React.FC<HeaderMenuProps> = ({ handleContent }) => {
       <Menu
         theme="dark"
         mode="horizontal"
-        defaultSelectedKeys={['Home']}
         onClick={handleClick}
       >
-        <Menu.Item key="Home">Acceuil</Menu.Item>
-        <Menu.Item key="Contacts">Contacts</Menu.Item>
+        <Menu.Item key="Apropos"><InfoCircleOutlined style={{ fontSize: '15px' }} />À propos</Menu.Item>
+        <Menu.Item key="Contacts"><PhoneOutlined style={{ fontSize: '15px' }} />Contacts</Menu.Item>
       </Menu>
     </Header>
   )

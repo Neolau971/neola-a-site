@@ -81,7 +81,6 @@ function MainPage() {
               style={{
                 padding: 24,
                 margin: 0,
-                minHeight: 280,
               }}
             >
               {<HandlerContentComposent

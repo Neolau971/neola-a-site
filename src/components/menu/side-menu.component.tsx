@@ -1,6 +1,6 @@
 import { Menu } from "antd"
 import {
-  InfoCircleOutlined,
+  HomeOutlined,
   FileDoneOutlined,
   FolderOpenOutlined,
   ShoppingOutlined
@@ -8,6 +8,8 @@ import {
 import Sider from "antd/lib/layout/Sider"
 import SubMenu from "antd/lib/menu/SubMenu"
 import React from "react"
+import theme from '../../pictures/fondGlobal.jpg'
+
 
 type SideMenuProps = {
   handleContent: (key: string) => void
@@ -22,24 +24,27 @@ const SideMenuComponent: React.FC<SideMenuProps> = ({ handleContent }) => {
   }
 
   return (
-    <Sider width={300} className="site-layout-background">
-      <Menu
-        mode="inline"
-        style={{ height: '100%', borderRight: 0 }}
-        onClick={handleClick}
-      >
-        <Menu.Item key="Apropos"><InfoCircleOutlined style={{ fontSize: '15px' }} />À propos</Menu.Item>
-        <Menu.Item key="Diplome"><FileDoneOutlined style={{ fontSize: '17px' }} />Diplômes</Menu.Item>
-        <Menu.Item key="Historic"><FolderOpenOutlined style={{ fontSize: '17px' }} />Historique de l'entreprise</Menu.Item>
-        <SubMenu title={serviceTitle}>
-          <Menu.Item key="couturePerso">Couture sur mesure et personnalisée</Menu.Item>
-          <Menu.Item key="transfo">Transformation de vêtement</Menu.Item>
-          <Menu.Item key="retouches">Retouches diverses</Menu.Item>
-          <Menu.Item key="coutureArtisa">Couture d'ameublement et artisanale</Menu.Item>
-          <Menu.Item key="cours">Cours privés</Menu.Item>
-        </SubMenu>
-      </Menu>
-    </Sider>
+    <div style={{ backgroundImage: `url(${theme})` }}>
+      <Sider width={300} style={{ height: '15rem' }}>
+        <Menu
+          mode="inline"
+          defaultSelectedKeys={['Home']}
+          style={{ height: '100%', borderRight: 0 }}
+          onClick={handleClick}
+        >
+          <Menu.Item key="Home"><HomeOutlined style={{ fontSize: '15px' }} />Acceuil</Menu.Item>
+          <Menu.Item key="Diplome"><FileDoneOutlined style={{ fontSize: '17px' }} />Diplômes</Menu.Item>
+          <Menu.Item key="Historic"><FolderOpenOutlined style={{ fontSize: '17px' }} />Historique de l'entreprise</Menu.Item>
+          <SubMenu title={serviceTitle}>
+            <Menu.Item key="couturePerso">Couture sur mesure et personnalisée</Menu.Item>
+            <Menu.Item key="transfo">Transformation de vêtement</Menu.Item>
+            <Menu.Item key="retouches">Retouches diverses</Menu.Item>
+            <Menu.Item key="coutureArtisa">Couture d'ameublement et artisanale</Menu.Item>
+            <Menu.Item key="cours">Cours privés</Menu.Item>
+          </SubMenu>
+        </Menu>
+      </Sider>
+    </div>
   )
 }
 

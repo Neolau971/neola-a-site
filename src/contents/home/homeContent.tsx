@@ -1,56 +1,85 @@
 import { Carousel } from "antd"
 import React from "react"
-import defile from '../../pictures/defile_TLS.jpg'
-import robe_rouge from '../../pictures/robe_rouge.jpg'
-import tenue_casino from '../../pictures/tenue_casino.jpg'
+import home from '../../pictures/home.jpg'
+import carou2 from '../../pictures/carou2.png'
+import defile_TLS from '../../pictures/defile_TLS.jpg'
+
+const style = {
+  display: "flex",
+  justifyContent: 'center'
+}
+
+const style2 = {
+  color: 'white',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginLeft: '8rem'
+}
+
+const text0 = 'Alietta Creatiion est une entreprise fortement influencé par la culture'
+const text1 = 'guadeloupéenne depuis sa création, de la tenu traditionnelle à la tenu'
+const text2 = 'tendance toute les coupes et création, original comme commun sont réalisable'
+const text3 = "dans cette établisement ou histoire, culture et actualité s'entremêle."
+
+const text4 = 'La créatice ayant une bonne expérience dans le monde de la mode, de par son'
+const text5 = 'passé de mannequin guadeloupéen reconnu. Elle saura vous illuminer soit'
+const text6 = "par la création d'une tenu personnalisé vous mettant parfaitement en valeur,"
+const text7 = "soit en vous proposent une de ses nombreuses création selon votre style."
+
+const text8 = 'Ayant de bonne compétences en stylisme, mode et couture, de par ses nombreux'
+const text9 = 'défilé de mode réalisé dans de nombreuses ville de France telle que Toulouse,'
+const text10 = 'Lyon, Sainte-anne... avec de nombreux collaborateur reconnu dans le domaine.'
+const text11 = "Elle saura grace à des cours personnalisé vous permèttre d'aquérire des"
+const text12 = "compétences indispensable et recherché dans le domain de la mode et couture."
 
 const HomeContent: React.FC = () => {
 
   return (
-    <Carousel autoplay dotPosition={'right'}>
-      <div>
-        <div style={{ display: "flex", justifyContent: 'space-around' }}>
-          <img src={defile} alt="slide 1" />
-          <div style={{
-            color: 'white',
-            fontWeight: 'bold',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}>
-            Le défiler réaliser à Toulouse, je n'y était pas...
+    <div style={{ marginTop: '5rem' }}>
+      <Carousel autoplay dotPosition={'right'}>
+        <div>
+          <div style={style}>
+            <img src={home} alt="home 1" />
+            <div style={style2}>
+              <p>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text0}</div>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text1}</div>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text2}</div>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text3}</div>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div style={{ display: "flex", justifyContent: 'space-around' }}>
-          <img src={robe_rouge} alt="slide 1" />
-          <div style={{
-            color: 'white',
-            fontWeight: 'bold',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}>
-            Une robe rouge...
+        <div>
+          <div style={style}>
+            <img src={carou2} alt="carou2 " />
+            <div style={style2}>
+              <p>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text4}</div>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text5}</div>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text6}</div>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text7}</div>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div style={{ display: "flex", justifyContent: 'space-around' }}>
-          <img src={tenue_casino} alt="slide 1" />
-          <div style={{
-            color: 'white',
-            fontWeight: 'bold',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}>
-            Ma mère et une tenu faite pour le casino de ste françois...
+        <div>
+          <div style={style}>
+            <img src={defile_TLS} alt="defile_TLS 1" />
+            <div style={style2}>
+              <p>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text8}</div>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text9}</div>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text10}</div>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text11}</div>
+                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text12}</div>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </Carousel>
+      </Carousel>
+    </div>
   )
 }
 
