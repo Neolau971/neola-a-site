@@ -13,8 +13,8 @@ const text8 = "- Cours de spécifique :"
 const text9 = "Couture d'ameublement"
 const text10 = "Couture artisanale"
 
-const text11 = "- Prix des prestations :"
-const text12 = "Pour les préstations du type A :"
+const text11 = "Les prix des prestations :"
+const text12 = "- Pour les préstations du type A :"
 const text13 = "35 euros le cours"
 const text14 = "280 euros le mois"
 const text15 = "- Pour les préstations du type B :"
@@ -76,4 +76,4 @@ function CoursContent() {
   )
 }
 
-export default CoursContent
+export default React.memo(CoursContent)

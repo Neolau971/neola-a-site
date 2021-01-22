@@ -1,5 +1,5 @@
-import { Divider } from "antd"
 import React from "react"
+import { Divider } from "antd"
 
 import diplome from '../../pictures/diplome.jpg'
 
@@ -69,4 +69,4 @@ function DiplomeContent() {
   )
 }
 
-export default DiplomeContent
+export default React.memo(DiplomeContent)

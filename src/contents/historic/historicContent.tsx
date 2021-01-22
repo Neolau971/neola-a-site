@@ -1,3 +1,4 @@
+import React from "react"
 import { Divider } from "antd"
 
 import histo1 from '../../pictures/histo1.png'
@@ -45,4 +46,4 @@ function HistoricContent() {
   )
 }
 
-export default HistoricContent
+export default React.memo(HistoricContent)
