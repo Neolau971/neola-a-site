@@ -10,7 +10,7 @@ const style = {
 }
 
 const style2 = {
-  color: 'white',
+  color: 'black',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -37,16 +37,16 @@ const HomeContent: React.FC = () => {
 
   return (
     <div style={{ marginTop: '5rem' }}>
-      <Carousel autoplay dotPosition={'right'}>
+      <Carousel dotPosition={'right'}>
         <div>
           <div style={style}>
             <img src={home} alt="home 1" />
             <div style={style2}>
               <p>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text0}</div>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text1}</div>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text2}</div>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text3}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text0}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text1}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text2}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text3}</div>
               </p>
             </div>
           </div>
@@ -56,10 +56,10 @@ const HomeContent: React.FC = () => {
             <img src={carou2} alt="carou2 " />
             <div style={style2}>
               <p>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text4}</div>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text5}</div>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text6}</div>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text7}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text4}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text5}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text6}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text7}</div>
               </p>
             </div>
           </div>
@@ -69,11 +69,11 @@ const HomeContent: React.FC = () => {
             <img src={defile_TLS} alt="defile_TLS 1" />
             <div style={style2}>
               <p>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text8}</div>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text9}</div>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text10}</div>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text11}</div>
-                <div style={{ fontWeight: 'bold', margin: '1rem' }}>{text12}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text8}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text9}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text10}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text11}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text12}</div>
               </p>
             </div>
           </div>
