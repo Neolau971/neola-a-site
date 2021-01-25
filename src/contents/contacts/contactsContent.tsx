@@ -7,6 +7,10 @@ import {
 } from '@ant-design/icons';
 import React from "react"
 
+import fleurL from '../../pictures/fleurL.png'
+import fleurR from '../../pictures/fleurR.png'
+
+
 const text1 = "Adresse : 105, rue de Gaspard, Fouché"
 const text2 = "91780 Sainte-Anne Guadeloupe"
 const text3 = "Tel : 0690 59 41 34 - 0690 19 41 30"
@@ -26,7 +30,8 @@ function ContactContent() {
   return (
     <div className="AppText">
       <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Contacts</div></Divider>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+        <img src={fleurL} alt="fleurL 1" />
         <p>
           <HomeOutlined style={iconStyle} />
           <div style={styles}>{text1}</div>
@@ -43,6 +48,7 @@ function ContactContent() {
             </a>
           </div>
         </p>
+        <img src={fleurR} alt="fleurR 1" />
       </div>
     </div>
   )

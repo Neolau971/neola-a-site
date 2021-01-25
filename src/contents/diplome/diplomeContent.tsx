@@ -44,7 +44,7 @@ const styles3 = {
 function DiplomeContent() {
   return (
     <div className="AppText">
-      <Divider plain><h2 className="AppText">Diplômes et Certifications</h2></Divider>
+      <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Diplômes et Certifications</div></Divider>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '2rem' }}>
         <div style={{ width: '519px', marginRight: '100px' }}>
           <div style={{ display: "flex", justifyContent: 'flex-start' }}>

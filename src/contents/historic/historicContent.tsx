@@ -17,31 +17,98 @@ const styles = {
   fontSize: 'medium'
 }
 
+const style = {
+  display: "flex",
+  justifyContent: 'center',
+  margin: '10rem'
+}
+
+const style1 = {
+  display: "flex",
+  justifyContent: 'center',
+  marginBottom: '10rem'
+}
+
+const style2 = {
+  color: 'black',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginLeft: '2rem',
+  marginRight: '2rem'
+}
+
+
 function HistoricContent() {
   return (
-    <div className="AppText">
+    <div>
       <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Histoire de l'entreprise</div></Divider>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <div style={{ width: '519px', marginRight: '100px' }}>
-          <div style={{ display: "flex", justifyContent: 'flex-start' }}>
-            <img src={histo1} alt="histo1" />
-          </div>
-          <div style={{ display: "flex", justifyContent: 'center' }}>
-            <img src={histo2} alt="histo2" />
-          </div>
-          <div style={{ display: "flex", justifyContent: 'flex-end' }}>
-            <img src={histo3} alt="histo3" />
+      <div style={{ marginTop: '4rem' }}>
+        <div style={style1}>
+          <img src={histo1} alt="home 1" />
+          <div style={style2}>
+            <p>
+              <div style={styles}>{text0}</div>
+              <div style={styles}>{text1}</div>
+              <div style={styles}>{text2}</div>
+              <div style={styles}>{text3}</div>
+              <div style={styles}>{text4}</div>
+              <div style={styles}>{text5}</div>
+            </p>
           </div>
         </div>
-        <p>
-          <div style={styles}>{text0}</div>
-          <div style={styles}>{text1}</div>
-          <div style={styles}>{text2}</div>
-          <div style={styles}>{text3}</div>
-          <div style={styles}>{text4}</div>
-          <div style={styles}>{text5}</div>
-        </p>
       </div>
+      <div style={{
+        display: 'inline-block',
+        background: 'linear-gradient(to right, lightskyblue, royalblue)',
+        width: '78%',
+        height: '6rem'
+      }} />
+      <div>
+        <div style={style}>
+          <div style={style2}>
+            <p>
+              <div style={styles}>{text0}</div>
+              <div style={styles}>{text1}</div>
+              <div style={styles}>{text2}</div>
+              <div style={styles}>{text3}</div>
+              <div style={styles}>{text4}</div>
+              <div style={styles}>{text5}</div>
+            </p>
+          </div>
+          <img src={histo2} alt="carou2 " />
+        </div>
+      </div>
+      <div style={{
+        display: 'inline-block',
+        background: 'linear-gradient(to right, royalblue, midnightblue)',
+        width: '78%',
+        height: '6rem'
+      }} />
+      <div>
+        <div style={style}>
+          <img src={histo3} alt="defile_TLS 1" />
+          <div style={style2}>
+            <p>
+              <div style={styles}>{text0}</div>
+              <div style={styles}>{text1}</div>
+              <div style={styles}>{text2}</div>
+              <div style={styles}>{text3}</div>
+              <div style={styles}>{text4}</div>
+              <div style={styles}>{text5}</div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <Divider plain>
+        <div className='AppText'>Copyright Alietta Creation - Tous droits réservés</div>
+      </Divider>
+      <div style={{
+        display: 'inline-block',
+        background: '#001529',
+        width: '100%',
+        height: '6rem'
+      }} />
     </div>
   )
 }

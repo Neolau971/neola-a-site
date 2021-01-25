@@ -1,4 +1,5 @@
 import React from "react"
+import { Divider } from 'antd';
 import home from '../../pictures/home.jpg'
 import carou2 from '../../pictures/carou2.png'
 import defile_TLS from '../../pictures/defile_TLS.jpg'
@@ -7,6 +8,12 @@ const style = {
   display: "flex",
   justifyContent: 'center',
   margin: '10rem'
+}
+
+const style1 = {
+  display: "flex",
+  justifyContent: 'center',
+  marginBottom: '10rem'
 }
 
 const style2 = {
@@ -37,9 +44,10 @@ const text12 = "compétences indispensable et recherché dans le domain de la mo
 const HomeContent: React.FC = () => {
 
   return (
-    <div style={{ marginTop: '5rem' }}>
-      <div>
-        <div style={style}>
+    <div>
+      <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Acceuil</div></Divider>
+      <div style={{ marginTop: '4rem' }}>
+        <div style={style1}>
           <img src={home} alt="home 1" />
           <div style={style2}>
             <p>
@@ -51,6 +59,12 @@ const HomeContent: React.FC = () => {
           </div>
         </div>
       </div>
+      <div style={{
+        display: 'inline-block',
+        background: 'linear-gradient(to right, lightskyblue, royalblue)',
+        width: '78%',
+        height: '6rem'
+      }} />
       <div>
         <div style={style}>
           <div style={style2}>
@@ -64,6 +78,12 @@ const HomeContent: React.FC = () => {
           <img src={carou2} alt="carou2 " />
         </div>
       </div>
+      <div style={{
+        display: 'inline-block',
+        background: 'linear-gradient(to right, royalblue, midnightblue)',
+        width: '78%',
+        height: '6rem'
+      }} />
       <div>
         <div style={style}>
           <img src={defile_TLS} alt="defile_TLS 1" />
@@ -78,6 +98,15 @@ const HomeContent: React.FC = () => {
           </div>
         </div>
       </div>
+      <Divider plain>
+        <div className='AppText'>Copyright Alietta Creation - Tous droits réservés</div>
+      </Divider>
+      <div style={{
+        display: 'inline-block',
+        background: '#001529',
+        width: '100%',
+        height: '6rem'
+      }} />
     </div>
   )
 }
