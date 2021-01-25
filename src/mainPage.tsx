@@ -3,7 +3,6 @@ import Layout, { Content } from "antd/lib/layout/layout";
 import React, { useState } from "react";
 import HandlerContentComposent from "./components/menu/handler-content.composent";
 import HeaderMenuComponent from "./components/menu/header-menu.component";
-import SideMenuComponent from "./components/menu/side-menu.component";
 import './mainPage.css'
 
 
@@ -70,39 +69,40 @@ function MainPage() {
   }
 
   return (
-    <Layout>
-      <HeaderMenuComponent handleContent={handleContent} />
+    <div style={{ overflow: 'auto' }}>
       <Layout>
-        <SideMenuComponent handleContent={handleContent} />
-        <Layout className='content'>
-          <div className='defaultHeight'>
-            <Content
-              className="site-layout-background"
-              style={{
-                padding: 24,
-                margin: 0,
-              }}
-            >
-              {<HandlerContentComposent
-                isHome={isHome}
-                isContacts={isContacts}
-                isDiplome={isDiplome}
-                isHistoric={isHistoric}
-                isTransfo={isTransfo}
-                isCours={isCours}
-                isCoutureArti={isCoutureArti}
-                isCouturePesro={isCouturePesro}
-                isRetouches={isRetouches}
-                isAPropos={isAPropos}
-              />}
-            </Content>
-          </div>
-          <Divider plain>
-            <div className='AppText'>Copyright Alietta Creation - Tous droits réservés</div>
-          </Divider>
+        <HeaderMenuComponent handleContent={handleContent} />
+        <Layout>
+          <Layout className='content'>
+            <div className='defaultHeight'>
+              <Content
+                className="site-layout-background"
+                style={{
+                  padding: 24,
+                  margin: 0,
+                }}
+              >
+                {<HandlerContentComposent
+                  isHome={isHome}
+                  isContacts={isContacts}
+                  isDiplome={isDiplome}
+                  isHistoric={isHistoric}
+                  isTransfo={isTransfo}
+                  isCours={isCours}
+                  isCoutureArti={isCoutureArti}
+                  isCouturePesro={isCouturePesro}
+                  isRetouches={isRetouches}
+                  isAPropos={isAPropos}
+                />}
+              </Content>
+            </div>
+            {!isHome && <Divider plain>
+              <div className='AppText'>Copyright Alietta Creation - Tous droits réservés</div>
+            </Divider>}
+          </Layout>
         </Layout>
       </Layout>
-    </Layout>
+    </div>
   )
 }
 

@@ -1,4 +1,3 @@
-import { Carousel } from "antd"
 import React from "react"
 import home from '../../pictures/home.jpg'
 import carou2 from '../../pictures/carou2.png'
@@ -6,7 +5,8 @@ import defile_TLS from '../../pictures/defile_TLS.jpg'
 
 const style = {
   display: "flex",
-  justifyContent: 'center'
+  justifyContent: 'center',
+  margin: '10rem'
 }
 
 const style2 = {
@@ -14,7 +14,8 @@ const style2 = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  marginLeft: '8rem'
+  marginLeft: '2rem',
+  marginRight: '2rem'
 }
 
 const text0 = 'Alietta Creatiion est une entreprise fortement influencé par la culture'
@@ -37,48 +38,46 @@ const HomeContent: React.FC = () => {
 
   return (
     <div style={{ marginTop: '5rem' }}>
-      <Carousel dotPosition={'right'}>
-        <div>
-          <div style={style}>
-            <img src={home} alt="home 1" />
-            <div style={style2}>
-              <p>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text0}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text1}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text2}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text3}</div>
-              </p>
-            </div>
+      <div>
+        <div style={style}>
+          <img src={home} alt="home 1" />
+          <div style={style2}>
+            <p>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text0}</div>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text1}</div>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text2}</div>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text3}</div>
+            </p>
           </div>
         </div>
-        <div>
-          <div style={style}>
-            <img src={carou2} alt="carou2 " />
-            <div style={style2}>
-              <p>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text4}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text5}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text6}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text7}</div>
-              </p>
-            </div>
+      </div>
+      <div>
+        <div style={style}>
+          <div style={style2}>
+            <p>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text4}</div>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text5}</div>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text6}</div>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text7}</div>
+            </p>
+          </div>
+          <img src={carou2} alt="carou2 " />
+        </div>
+      </div>
+      <div>
+        <div style={style}>
+          <img src={defile_TLS} alt="defile_TLS 1" />
+          <div style={style2}>
+            <p>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text8}</div>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text9}</div>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text10}</div>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text11}</div>
+              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text12}</div>
+            </p>
           </div>
         </div>
-        <div>
-          <div style={style}>
-            <img src={defile_TLS} alt="defile_TLS 1" />
-            <div style={style2}>
-              <p>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text8}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text9}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text10}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text11}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text12}</div>
-              </p>
-            </div>
-          </div>
-        </div>
-      </Carousel>
+      </div>
     </div>
   )
 }

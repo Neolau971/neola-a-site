@@ -1,7 +1,12 @@
 import { Menu } from "antd"
+import SubMenu from "antd/lib/menu/SubMenu"
 import {
   InfoCircleOutlined,
-  PhoneOutlined
+  PhoneOutlined,
+  HomeOutlined,
+  FileDoneOutlined,
+  FolderOpenOutlined,
+  ShoppingOutlined
 } from '@ant-design/icons';
 import { Header } from "antd/lib/layout/layout"
 import { ScissorOutlined, SkinOutlined } from '@ant-design/icons';
@@ -12,6 +17,8 @@ type HeaderMenuProps = {
 }
 
 const HeaderMenuComponent: React.FC<HeaderMenuProps> = ({ handleContent }) => {
+
+  const serviceTitle = <div><ShoppingOutlined style={{ fontSize: '17px' }} />Services proposés</div>
 
   const handleClick = (e: any) => {
     handleContent(e.key)
@@ -37,10 +44,21 @@ const HeaderMenuComponent: React.FC<HeaderMenuProps> = ({ handleContent }) => {
       <Menu
         theme="dark"
         mode="horizontal"
+        defaultSelectedKeys={['Home']}
         onClick={handleClick}
       >
+        <Menu.Item key="Home"><HomeOutlined style={{ fontSize: '15px' }} />Acceuil</Menu.Item>
         <Menu.Item key="Apropos"><InfoCircleOutlined style={{ fontSize: '15px' }} />À propos</Menu.Item>
         <Menu.Item key="Contacts"><PhoneOutlined style={{ fontSize: '15px' }} />Contacts</Menu.Item>
+        <Menu.Item key="Diplome"><FileDoneOutlined style={{ fontSize: '17px' }} />Diplômes</Menu.Item>
+        <Menu.Item key="Historic"><FolderOpenOutlined style={{ fontSize: '17px' }} />Historique de l'entreprise</Menu.Item>
+        <SubMenu title={serviceTitle}>
+          <Menu.Item key="couturePerso">Couture sur mesure et personnalisée</Menu.Item>
+          <Menu.Item key="transfo">Transformation de vêtement</Menu.Item>
+          <Menu.Item key="retouches">Retouches diverses</Menu.Item>
+          <Menu.Item key="coutureArtisa">Couture d'ameublement et artisanale</Menu.Item>
+          <Menu.Item key="cours">Cours privés</Menu.Item>
+        </SubMenu>
       </Menu>
     </Header>
   )
