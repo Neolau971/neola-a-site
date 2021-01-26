@@ -69,11 +69,11 @@ function MainPage() {
   }
 
   const boolTemp = useMemo(() => {
-    if (isHistoric || isHome) {
+    if (isHistoric || isHome || isCours) {
       return false
     }
     return true
-  }, [isHistoric, isHome])
+  }, [isHistoric, isHome, isCours])
 
   return (
     <div style={{ overflow: 'auto' }}>
