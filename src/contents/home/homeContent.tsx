@@ -32,6 +32,11 @@ const style3 = {
   marginRight: '5rem'
 }
 
+const style4 = {
+  margin: '1rem',
+  fontSize: '1.2em'
+}
+
 const text0 = 'Alietta Creatiion est une entreprise fortement influencé par la culture'
 const text1 = 'guadeloupéenne depuis sa création, de la tenu traditionnelle à la tenu'
 const text2 = 'tendance toute les coupes et création, original comme commun sont réalisable'
@@ -59,10 +64,10 @@ const HomeContent: React.FC = () => {
           <div style={style2}>
             <Card>
               <p>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text0}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text1}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text2}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text3}</div>
+                <div style={style4}>{text0}</div>
+                <div style={style4}>{text1}</div>
+                <div style={style4}>{text2}</div>
+                <div style={style4}>{text3}</div>
               </p>
             </Card>
           </div>
@@ -79,10 +84,10 @@ const HomeContent: React.FC = () => {
           <div style={style3}>
             <Card>
               <p>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text4}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text5}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text6}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text7}</div>
+                <div style={style4}>{text4}</div>
+                <div style={style4}>{text5}</div>
+                <div style={style4}>{text6}</div>
+                <div style={style4}>{text7}</div>
               </p>
             </Card>
           </div>
@@ -101,11 +106,11 @@ const HomeContent: React.FC = () => {
           <div style={style2}>
             <Card>
               <p>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text8}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text9}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text10}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text11}</div>
-                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text12}</div>
+                <div style={style4}>{text8}</div>
+                <div style={style4}>{text9}</div>
+                <div style={style4}>{text10}</div>
+                <div style={style4}>{text11}</div>
+                <div style={style4}>{text12}</div>
               </p>
             </Card>
           </div>

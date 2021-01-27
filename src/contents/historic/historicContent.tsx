@@ -1,9 +1,9 @@
 import React from "react"
-import { Divider } from "antd"
+import { Divider, Card } from "antd"
 
-import histo1 from '../../pictures/histo1.png'
-import histo2 from '../../pictures/histo2.png'
-import histo3 from '../../pictures/histo3.png'
+import mAtelier from '../../pictures/mAtelier.jpg'
+import mDefile1 from '../../pictures/mDefile1.png'
+import mPhoto from '../../pictures/mPhoto.jpg'
 
 const text0 = "Alietta céatiiOn à été créé en 2011, à Sainte-Anne en Guadeloupe"
 const text1 = "avec pour but, promouvoir et développer le monde de la mode."
@@ -13,8 +13,8 @@ const text4 = "Ainsi c'est avec un grand succès que cet objectif est réalisé"
 const text5 = "depuis plus de 6 ans."
 
 const styles = {
-  margin: '20px',
-  fontSize: 'medium'
+  margin: '1rem',
+  fontSize: '1.2em'
 }
 
 const style = {
@@ -34,8 +34,15 @@ const style2 = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  marginLeft: '2rem',
-  marginRight: '2rem'
+  marginLeft: '15rem',
+}
+
+const style3 = {
+  color: 'black',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginRight: '15rem'
 }
 
 
@@ -45,16 +52,18 @@ function HistoricContent() {
       <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Histoire de l'entreprise</div></Divider>
       <div style={{ marginTop: '4rem' }}>
         <div style={style1}>
-          <img src={histo1} alt="home 1" />
+          <img src={mPhoto} alt="mPhoto" />
           <div style={style2}>
-            <p>
-              <div style={styles}>{text0}</div>
-              <div style={styles}>{text1}</div>
-              <div style={styles}>{text2}</div>
-              <div style={styles}>{text3}</div>
-              <div style={styles}>{text4}</div>
-              <div style={styles}>{text5}</div>
-            </p>
+            <Card>
+              <p>
+                <div style={styles}>{text0}</div>
+                <div style={styles}>{text1}</div>
+                <div style={styles}>{text2}</div>
+                <div style={styles}>{text3}</div>
+                <div style={styles}>{text4}</div>
+                <div style={styles}>{text5}</div>
+              </p>
+            </Card>
           </div>
         </div>
       </div>
@@ -66,17 +75,19 @@ function HistoricContent() {
       }} />
       <div>
         <div style={style}>
-          <div style={style2}>
-            <p>
-              <div style={styles}>{text0}</div>
-              <div style={styles}>{text1}</div>
-              <div style={styles}>{text2}</div>
-              <div style={styles}>{text3}</div>
-              <div style={styles}>{text4}</div>
-              <div style={styles}>{text5}</div>
-            </p>
+          <div style={style3}>
+            <Card>
+              <p>
+                <div style={styles}>{text0}</div>
+                <div style={styles}>{text1}</div>
+                <div style={styles}>{text2}</div>
+                <div style={styles}>{text3}</div>
+                <div style={styles}>{text4}</div>
+                <div style={styles}>{text5}</div>
+              </p>
+            </Card>
           </div>
-          <img src={histo2} alt="carou2 " />
+          <img src={mDefile1} alt="mDefile1 " />
         </div>
       </div>
       <div style={{
@@ -87,16 +98,18 @@ function HistoricContent() {
       }} />
       <div>
         <div style={style}>
-          <img src={histo3} alt="defile_TLS 1" />
+          <img src={mAtelier} alt="mAtelier" />
           <div style={style2}>
-            <p>
-              <div style={styles}>{text0}</div>
-              <div style={styles}>{text1}</div>
-              <div style={styles}>{text2}</div>
-              <div style={styles}>{text3}</div>
-              <div style={styles}>{text4}</div>
-              <div style={styles}>{text5}</div>
-            </p>
+            <Card>
+              <p>
+                <div style={styles}>{text0}</div>
+                <div style={styles}>{text1}</div>
+                <div style={styles}>{text2}</div>
+                <div style={styles}>{text3}</div>
+                <div style={styles}>{text4}</div>
+                <div style={styles}>{text5}</div>
+              </p>
+            </Card>
           </div>
         </div>
       </div>
