@@ -1,5 +1,5 @@
 import React from "react"
-import { Divider } from 'antd';
+import { Divider, Card } from 'antd';
 import home from '../../pictures/home.jpg'
 import carou2 from '../../pictures/carou2.png'
 import defile_TLS from '../../pictures/defile_TLS.jpg'
@@ -21,8 +21,15 @@ const style2 = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  marginLeft: '2rem',
-  marginRight: '2rem'
+  marginLeft: '5rem',
+}
+
+const style3 = {
+  color: 'black',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginRight: '5rem'
 }
 
 const text0 = 'Alietta Creatiion est une entreprise fortement influencé par la culture'
@@ -50,30 +57,34 @@ const HomeContent: React.FC = () => {
         <div style={style1}>
           <img src={home} alt="home 1" />
           <div style={style2}>
-            <p>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text0}</div>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text1}</div>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text2}</div>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text3}</div>
-            </p>
+            <Card>
+              <p>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text0}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text1}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text2}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text3}</div>
+              </p>
+            </Card>
           </div>
         </div>
       </div>
       <div style={{
         display: 'inline-block',
         background: 'linear-gradient(to right, lightskyblue, royalblue)',
-        width: '78%',
+        width: '83%',
         height: '6rem'
       }} />
       <div>
         <div style={style}>
-          <div style={style2}>
-            <p>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text4}</div>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text5}</div>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text6}</div>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text7}</div>
-            </p>
+          <div style={style3}>
+            <Card>
+              <p>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text4}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text5}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text6}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text7}</div>
+              </p>
+            </Card>
           </div>
           <img src={carou2} alt="carou2 " />
         </div>
@@ -81,20 +92,22 @@ const HomeContent: React.FC = () => {
       <div style={{
         display: 'inline-block',
         background: 'linear-gradient(to right, royalblue, midnightblue)',
-        width: '78%',
+        width: '83%',
         height: '6rem'
       }} />
       <div>
         <div style={style}>
           <img src={defile_TLS} alt="defile_TLS 1" />
           <div style={style2}>
-            <p>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text8}</div>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text9}</div>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text10}</div>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text11}</div>
-              <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text12}</div>
-            </p>
+            <Card>
+              <p>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text8}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text9}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text10}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text11}</div>
+                <div style={{ margin: '1rem', fontSize: '1.2em' }}>{text12}</div>
+              </p>
+            </Card>
           </div>
         </div>
       </div>
