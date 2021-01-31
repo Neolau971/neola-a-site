@@ -47,7 +47,7 @@ const HeaderMenuComponent: React.FC<HeaderMenuProps> = ({ handleContent }) => {
         defaultSelectedKeys={['Home']}
         onClick={handleClick}
       >
-        <Menu.Item key="Home"><HomeOutlined style={{ fontSize: '15px' }} />Acceuil</Menu.Item>
+        <Menu.Item key="Home"><HomeOutlined style={{ fontSize: '15px' }} />Accueil</Menu.Item>
         <Menu.Item key="Apropos"><InfoCircleOutlined style={{ fontSize: '15px' }} />À propos</Menu.Item>
         <Menu.Item key="Contacts"><PhoneOutlined style={{ fontSize: '15px' }} />Contacts</Menu.Item>
         <Menu.Item key="Diplome"><FileDoneOutlined style={{ fontSize: '17px' }} />Diplômes</Menu.Item>

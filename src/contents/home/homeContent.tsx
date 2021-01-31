@@ -53,10 +53,10 @@ const HomeContent: React.FC = () => {
 
   return (
     <div>
-      <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Acceuil</div></Divider>
+      <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Accueil</div></Divider>
       <div style={{ marginTop: '4rem' }}>
         <div style={style}>
-          <img src={home} alt="home 1" style={{ width: '50%' }} />
+          <img src={home} alt="home 1" style={{ width: '45%' }} />
           <div style={style2}>
             <Card size="small">
               <p>
@@ -83,7 +83,7 @@ const HomeContent: React.FC = () => {
               </p>
             </Card>
           </div>
-          <img src={carou2} alt="carou2 " style={{ width: '50%' }} />
+          <img src={carou2} alt="carou2 " style={{ width: '45%' }} />
         </div>
       </div>
       <div style={{
@@ -94,7 +94,7 @@ const HomeContent: React.FC = () => {
       }} />
       <div>
         <div style={style}>
-          <img src={defile_TLS} alt="defile_TLS 1" style={{ width: '50%' }} />
+          <img src={defile_TLS} alt="defile_TLS 1" style={{ width: '45%' }} />
           <div style={style2}>
             <Card size="small">
               <p>
