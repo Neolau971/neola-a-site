@@ -1,27 +1,29 @@
-import { Divider } from "antd"
+import { Divider, List } from "antd"
 import React from "react"
+import {
+  SkinOutlined
+} from '@ant-design/icons';
 
-const text0 = "Les retouches proposés :"
-const text1 = "- Type de retouche :"
-const text2 = "retouche sur manteau, veste ou blazer"
-const text3 = "retouche sur pantalon"
-const text4 = "retouche sur t-shirt ou chemise"
-const text5 = "retouche sur vêtement endommagé"
+import model from '../../pictures/model.jpg'
+import model2 from '../../pictures/model2.png'
+import FooterComposent from "../../components/footer.composent";
 
-const text12 = "Les prix des prestations :"
-const text13 = "- Pour les petites retouches :"
-const text14 = "35 euros le vêtement"
-const text15 = "280 euros l'ensemble de 5 vêtements"
-const text16 = "- Pour les grosses retouches :"
-const text17 = "35 euros le vêtement"
-const text18 = "280 euros l'ensemble de 5 vêtements"
+const data0 = [
+  "retouche sur manteau, veste ou blazer",
+  "retouche sur pantalon",
+  "retouche sur t-shirt ou chemise",
+  "retouche sur vêtement endommagé"
+]
 
-const styles = {
-  margin: '20px',
-  fontSize: 'medium',
-  display: 'flex',
-  justifyContent: 'flex-start'
-}
+const data1 = [
+  "35 euros le vêtement",
+  "280 euros l'ensemble ,de 5 vêtements"
+]
+
+const data2 = [
+  "35 euros le vêtement",
+  "280 euros l'ensemble ,de 5 vêtements"
+]
 
 const styles0 = {
   margin: '20px',
@@ -31,37 +33,43 @@ const styles0 = {
   justifyContent: 'flex-start'
 }
 
-const styles1 = {
-  margin: '20px',
-  fontSize: 'medium',
-  display: 'flex',
-  justifyContent: 'flex-start',
-  marginLeft: '3rem'
-}
-
 function RetouchesContent() {
   return (
     <div className="AppText">
-      <Divider plain><h2 className="AppText">Retouches diverses</h2></Divider>
-      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'flex-start', marginTop: '4rem' }}>
-        <p>
-          <div style={styles0}>{text0}</div>
-          <div style={styles}>{text1}</div>
-          <div style={styles1}>{text2}</div>
-          <div style={styles1}>{text3}</div>
-          <div style={styles1}>{text4}</div>
-          <div style={styles1}>{text5}</div>
-        </p>
-        <p>
-          <div style={styles0}>{text12}</div>
-          <div style={styles}>{text13}</div>
-          <div style={styles1}>{text14}</div>
-          <div style={styles1}>{text15}</div>
-          <div style={styles}>{text16}</div>
-          <div style={styles1}>{text17}</div>
-          <div style={styles1}>{text18}</div>
-        </p>
+      <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Retouches diverses</div></Divider>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
+        <img src={model} alt="model" />
+        <div style={{ marginLeft: '15rem' }}>
+          <div style={styles0}>{"Les retouches proposés"}</div>
+          <List
+            header={<div><SkinOutlined style={{ fontSize: '1.5rem' }} /></div>}
+            bordered
+            dataSource={data0}
+            renderItem={item => { return <List.Item>{item}</List.Item> }}
+          />
+        </div>
       </div>
+      <Divider />
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
+        <div>
+          <div style={styles0}>{'Les prix des prestations'}</div>
+          <List
+            header={<div>{"Pour les préstations du type A"}</div>}
+            bordered
+            dataSource={data1}
+            renderItem={item => { return <List.Item>{item}</List.Item> }}
+          />
+          <div style={{ margin: '2rem' }} />
+          <List
+            header={<div>{"Pour les préstations du type B"}</div>}
+            bordered
+            dataSource={data2}
+            renderItem={item => { return <List.Item>{item}</List.Item> }}
+          />
+        </div>
+        <img style={{ marginLeft: '20rem' }} src={model2} alt="model2" />
+      </div>
+      <FooterComposent />
     </div>
   )
 }

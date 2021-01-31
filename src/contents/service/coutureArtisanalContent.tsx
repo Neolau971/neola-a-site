@@ -1,31 +1,33 @@
-import { Divider } from "antd"
+import { Divider, List } from "antd"
 import React from "react"
+import {
+  ScissorOutlined
+} from '@ant-design/icons';
 
-const text0 = "Les couture d'ameublement proposés :"
+import model from '../../pictures/lampe.png'
+import model2 from '../../pictures/coussin.png'
+import FooterComposent from "../../components/footer.composent";
 
-const text2 = "rideaux et voilages"
-const text3 = "couture d'intérieurs"
-const text4 = "parure de drap"
-const text5 = "stores"
-const text6 = "coussin d'alliance"
-const text7 = "plaides"
-const text8 = "têtes de lit"
-const text9 = "..."
+const data0 = [
+  "rideaux et voilages",
+  "couture d'intérieurs",
+  "parure de drap",
+  "stores",
+  "coussin d'alliance",
+  "plaides",
+  "têtes de lit",
+  "..."
+]
 
-const text12 = "Les prix des prestations :"
-const text13 = "- Pour les préstations du type A :"
-const text14 = "35 euros la pièce"
-const text15 = "280 euros l'ensemble de pièces'"
-const text16 = "- Pour les préstations du type B :"
-const text17 = "35 euros la pièce"
-const text18 = "280 euros l'ensemble de pièces"
+const data1 = [
+  "35 euros la pièce",
+  "280 euros l'ensemble de pièces"
+]
 
-const styles = {
-  margin: '20px',
-  fontSize: 'medium',
-  display: 'flex',
-  justifyContent: 'flex-start'
-}
+const data2 = [
+  "35 euros la pièce",
+  "280 euros l'ensemble de pièces"
+]
 
 const styles0 = {
   margin: '20px',
@@ -35,40 +37,43 @@ const styles0 = {
   justifyContent: 'flex-start'
 }
 
-const styles1 = {
-  margin: '20px',
-  fontSize: 'medium',
-  display: 'flex',
-  justifyContent: 'flex-start',
-  marginLeft: '3rem'
-}
-
 function CoutureArtisanalContent() {
   return (
     <div className="AppText">
-      <Divider plain><h2 className="AppText">Couture d'ameublement et artisanale</h2></Divider>
-      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'flex-start', marginTop: '4rem' }}>
-        <p>
-          <div style={styles0}>{text0}</div>
-          <div style={styles1}>{text2}</div>
-          <div style={styles1}>{text3}</div>
-          <div style={styles1}>{text4}</div>
-          <div style={styles1}>{text5}</div>
-          <div style={styles1}>{text6}</div>
-          <div style={styles1}>{text7}</div>
-          <div style={styles1}>{text8}</div>
-          <div style={styles1}>{text9}</div>
-        </p>
-        <p>
-          <div style={styles0}>{text12}</div>
-          <div style={styles}>{text13}</div>
-          <div style={styles1}>{text14}</div>
-          <div style={styles1}>{text15}</div>
-          <div style={styles}>{text16}</div>
-          <div style={styles1}>{text17}</div>
-          <div style={styles1}>{text18}</div>
-        </p>
+      <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Coutures d'ameublement et artisanale</div></Divider>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
+        <img src={model} alt="model" style={{ marginTop: '4rem' }} />
+        <div style={{ marginLeft: '15rem' }}>
+          <div style={styles0}>{"Les couture d'ameublement proposés"}</div>
+          <List
+            header={<div><ScissorOutlined style={{ fontSize: '1.5rem' }} /></div>}
+            bordered
+            dataSource={data0}
+            renderItem={item => { return <List.Item>{item}</List.Item> }}
+          />
+        </div>
       </div>
+      <Divider />
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
+        <div>
+          <div style={styles0}>{'Les prix des prestations'}</div>
+          <List
+            header={<div>{"Pour les préstations du type A"}</div>}
+            bordered
+            dataSource={data1}
+            renderItem={item => { return <List.Item>{item}</List.Item> }}
+          />
+          <div style={{ margin: '2rem' }} />
+          <List
+            header={<div>{"Pour les préstations du type B"}</div>}
+            bordered
+            dataSource={data2}
+            renderItem={item => { return <List.Item>{item}</List.Item> }}
+          />
+        </div>
+        <img style={{ marginLeft: '15rem' }} src={model2} alt="model2" />
+      </div>
+      <FooterComposent />
     </div>
   )
 }

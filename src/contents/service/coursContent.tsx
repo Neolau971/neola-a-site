@@ -6,6 +6,7 @@ import {
 
 import model from '../../pictures/model.jpg'
 import model2 from '../../pictures/model2.png'
+import FooterComposent from "../../components/footer.composent";
 
 const data0 = [
   "Découverte et maitrise des mensurations",
@@ -68,15 +69,7 @@ function CoursContent() {
         </div>
         <img style={{ marginLeft: '20rem' }} src={model2} alt="model2" />
       </div>
-      <Divider plain>
-        <div className='AppText'>Copyright Alietta Creation - Tous droits réservés</div>
-      </Divider>
-      <div style={{
-        display: 'inline-block',
-        background: '#001529',
-        width: '100%',
-        height: '6rem'
-      }} />
+      <FooterComposent />
     </div>
   )
 }

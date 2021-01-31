@@ -1,5 +1,6 @@
-import { Divider, Row, Col } from "antd"
+import { Divider, Row, Col, Card } from "antd"
 import React from "react"
+import FooterComposent from "../../components/footer.composent"
 import profile from '../../pictures/profile.jpg'
 
 const text0 = "Ayant déjà de l'expérience dans le domaine de la mode de par son passé"
@@ -28,17 +29,20 @@ function AProposContent() {
         </Row>
         <Row>
           <Col>
-            <p>
-              <div style={styles}>{text0}</div>
-              <div style={styles}>{text1}</div>
-              <div style={styles}>{text2}</div>
-              <div style={styles}>{text3}</div>
-              <div style={styles}>{text4}</div>
-              <div style={styles}>{text5}</div>
-            </p>
+            <Card>
+              <p>
+                <div style={styles}>{text0}</div>
+                <div style={styles}>{text1}</div>
+                <div style={styles}>{text2}</div>
+                <div style={styles}>{text3}</div>
+                <div style={styles}>{text4}</div>
+                <div style={styles}>{text5}</div>
+              </p>
+            </Card>
           </Col>
         </Row>
       </div>
+      <FooterComposent />
     </div>
   )
 }

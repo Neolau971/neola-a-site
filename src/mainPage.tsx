@@ -1,7 +1,6 @@
-import { Divider } from "antd";
 import Layout, { Content } from "antd/lib/layout/layout";
-import React, { useMemo, useState } from "react";
-import HandlerContentComposent from "./components/menu/handler-content.composent";
+import React, { useState } from "react";
+import HandlerContentComposent from "./components/handler-content.composent";
 import HeaderMenuComponent from "./components/menu/header-menu.component";
 import './mainPage.css'
 
@@ -68,13 +67,6 @@ function MainPage() {
     }
   }
 
-  const boolTemp = useMemo(() => {
-    if (isHistoric || isHome || isCours) {
-      return false
-    }
-    return true
-  }, [isHistoric, isHome, isCours])
-
   return (
     <div style={{ overflow: 'auto' }}>
       <Layout>
@@ -103,17 +95,6 @@ function MainPage() {
                 />}
               </Content>
             </div>
-            {boolTemp && <>
-              <Divider plain>
-                <div className='AppText'>Copyright Alietta Creation - Tous droits réservés</div>
-              </Divider>
-              <div style={{
-                display: 'inline-block',
-                background: '#001529',
-                width: '100%',
-                height: '6rem'
-              }} />
-            </>}
           </Layout>
         </Layout>
       </Layout>

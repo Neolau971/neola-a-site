@@ -4,6 +4,7 @@ import { Divider, Card } from "antd"
 import mAtelier from '../../pictures/mAtelier.jpg'
 import mDefile1 from '../../pictures/mDefile1.png'
 import mPhoto from '../../pictures/mPhoto.jpg'
+import FooterComposent from "../../components/footer.composent"
 
 const text0 = "Alietta céatiiOn à été créé en 2011, à Sainte-Anne en Guadeloupe"
 const text1 = "avec pour but, promouvoir et développer le monde de la mode."
@@ -20,13 +21,10 @@ const styles = {
 const style = {
   display: "flex",
   justifyContent: 'center',
-  margin: '10rem'
-}
-
-const style1 = {
-  display: "flex",
-  justifyContent: 'center',
-  marginBottom: '10rem'
+  marginRight: '10rem',
+  marginLeft: '10rem',
+  marginBottom: '5rem',
+  marginTop: '5rem'
 }
 
 const style2 = {
@@ -51,10 +49,10 @@ function HistoricContent() {
     <div>
       <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Histoire de l'entreprise</div></Divider>
       <div style={{ marginTop: '4rem' }}>
-        <div style={style1}>
+        <div style={style}>
           <img src={mPhoto} alt="mPhoto" />
           <div style={style2}>
-            <Card>
+            <Card size="small">
               <p>
                 <div style={styles}>{text0}</div>
                 <div style={styles}>{text1}</div>
@@ -76,7 +74,7 @@ function HistoricContent() {
       <div>
         <div style={style}>
           <div style={style3}>
-            <Card>
+            <Card size="small">
               <p>
                 <div style={styles}>{text0}</div>
                 <div style={styles}>{text1}</div>
@@ -100,7 +98,7 @@ function HistoricContent() {
         <div style={style}>
           <img src={mAtelier} alt="mAtelier" />
           <div style={style2}>
-            <Card>
+            <Card size="small">
               <p>
                 <div style={styles}>{text0}</div>
                 <div style={styles}>{text1}</div>
@@ -113,15 +111,7 @@ function HistoricContent() {
           </div>
         </div>
       </div>
-      <Divider plain>
-        <div className='AppText'>Copyright Alietta Creation - Tous droits réservés</div>
-      </Divider>
-      <div style={{
-        display: 'inline-block',
-        background: '#001529',
-        width: '100%',
-        height: '6rem'
-      }} />
+      <FooterComposent />
     </div>
   )
 }

@@ -9,6 +9,7 @@ import React from "react"
 
 import fleurL from '../../pictures/fleurL.png'
 import fleurR from '../../pictures/fleurR.png'
+import FooterComposent from "../../components/footer.composent";
 
 
 const text1 = "Adresse : 105, rue de Gaspard, Fouché"
@@ -50,6 +51,7 @@ function ContactContent() {
         </p>
         <img src={fleurR} alt="fleurR 1" />
       </div>
+      <FooterComposent />
     </div>
   )
 }
