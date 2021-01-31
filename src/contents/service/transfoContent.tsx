@@ -38,7 +38,7 @@ function TransfoVetementsContent() {
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
         <img src={model} alt="model" />
         <div style={{ marginLeft: '15rem' }}>
-          <div style={styles0}>{"Les transformations proposés"}</div>
+          <div style={styles0}>{"Les transformations proposées"}</div>
           <List
             header={<div>{"Type de transformation"}</div>}
             bordered
@@ -50,7 +50,7 @@ function TransfoVetementsContent() {
       <Divider />
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
         <div>
-          <div style={styles0}>{'Les prix des prestations'}</div>
+          <div style={styles0}>{'Le prix des prestations'}</div>
           <List
             header={<div>{"Pour les préstations du type A"}</div>}
             bordered

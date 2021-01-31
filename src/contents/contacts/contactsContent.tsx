@@ -15,7 +15,7 @@ import FooterComposent from "../../components/footer.composent";
 const text1 = "Adresse : 105, rue de Gaspard, Fouché"
 const text2 = "91780 Sainte-Anne Guadeloupe"
 const text3 = "Tel : 0690 59 41 34 - 0690 19 41 30"
-const text4 = "Mail : alietta.creation@gmail.com"
+const text4 = "Mail : alietta.creatiion@gmail.com"
 const text5 = 'Facebook : '
 
 const styles = {

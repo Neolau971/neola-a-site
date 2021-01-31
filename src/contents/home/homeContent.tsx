@@ -35,19 +35,19 @@ const style4 = {
   fontSize: '1.2em'
 }
 
-const text0 = 'Alietta Creatiion est une entreprise fortement influencé par la culture guadeloupéenne depuis sa création.'
-const text1 = 'De la tenu traditionnelle à la tenu tendance toute les coupes et création,'
-const text2 = "original comme commun sont réalisable dans cette établisement ou histoire, culture et actualité s'entremêle."
+const text0 = 'Alietta CreatiiOn est une entreprise fortement influencée par la culture guadeloupéenne depuis sa création.'
+const text1 = 'De la tenue traditionnelle à la tenue tendance toutes les coupes et créations,'
+const text2 = "originales comme communes sont réalisables dans cet établisement où histoire, culture et actualité s'entremêlent."
 
 const text4 = 'La créatice ayant une bonne expérience dans le monde de la mode, de par son passé de mannequin guadeloupéen reconnu.'
-const text5 = "Elle saura vous illuminer soit par la création d'une tenu personnalisé vous mettant parfaitement en valeur,"
-const text6 = "soit en vous proposent une de ses nombreuses création selon votre style."
+const text5 = "Elle saura vous illuminer soit par la création d'une tenue personnalisée vous mettant parfaitement en valeur,"
+const text6 = "soit en vous proposant une de ses nombreuses créations selon votre style."
 
-const text8 = 'Ayant de bonne compétences en stylisme, mode et couture, de par ses nombreux défilé de mode'
-const text9 = 'réalisé dans de nombreuses ville de France telle que Toulouse, Lyon, Sainte-anne...'
-const text10 = 'avec de nombreux collaborateur reconnu dans le domaine.'
-const text11 = "Elle saura grace à des cours personnalisé vous permèttre d'aquérire des compétences indispensable"
-const text12 = "et recherché dans le domain de la mode et couture."
+const text8 = 'Ayant de bonnes compétences en stylisme, mode et couture, de par ses nombreux défilés de mode'
+const text9 = 'réalisés dans de nombreuses villes de France telles que Toulouse, Lyon, Sainte-Anne...'
+const text10 = 'avec de nombreux collaborateurs reconnus dans le domaine.'
+const text11 = "Elle saura, grace à des cours personnalisés, vous permettre d'acquérir des compétences indispensables"
+const text12 = "et recherchées dans le domaine de la mode et de la couture."
 
 const HomeContent: React.FC = () => {
 

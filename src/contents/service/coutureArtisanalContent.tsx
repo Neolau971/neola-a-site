@@ -9,24 +9,24 @@ import model2 from '../../pictures/coussin.png'
 import FooterComposent from "../../components/footer.composent";
 
 const data0 = [
-  "rideaux et voilages",
-  "couture d'intérieurs",
-  "parure de drap",
-  "stores",
-  "coussin d'alliance",
-  "plaides",
-  "têtes de lit",
+  "Rideaux et voilages",
+  "Couture d'intérieur",
+  "Parure de drap",
+  "Stores",
+  "Coussin d'alliance",
+  "Plaide",
+  "Tête de lit",
   "..."
 ]
 
 const data1 = [
   "35 euros la pièce",
-  "280 euros l'ensemble de pièces"
+  "280 euros l'ensemble de 5 pièces"
 ]
 
 const data2 = [
   "35 euros la pièce",
-  "280 euros l'ensemble de pièces"
+  "280 euros l'ensemble de 50 pièces"
 ]
 
 const styles0 = {
@@ -40,11 +40,11 @@ const styles0 = {
 function CoutureArtisanalContent() {
   return (
     <div className="AppText">
-      <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Coutures d'ameublement et artisanale</div></Divider>
+      <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Couture d'ameublement et artisanale</div></Divider>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
         <img src={model} alt="model" style={{ marginTop: '4rem' }} />
         <div style={{ marginLeft: '15rem' }}>
-          <div style={styles0}>{"Les couture d'ameublement proposés"}</div>
+          <div style={styles0}>{"Les coutures d'ameublement proposées"}</div>
           <List
             header={<div><ScissorOutlined style={{ fontSize: '1.5rem' }} /></div>}
             bordered
@@ -56,7 +56,7 @@ function CoutureArtisanalContent() {
       <Divider />
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
         <div>
-          <div style={styles0}>{'Les prix des prestations'}</div>
+          <div style={styles0}>{'Le prix des prestations'}</div>
           <List
             header={<div>{"Pour les préstations du type A"}</div>}
             bordered

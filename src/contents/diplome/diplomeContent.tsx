@@ -41,7 +41,7 @@ const style1 = {
 function DiplomeContent() {
   return (
     <div className="AppText">
-      <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Diplômes et Certifications</div></Divider>
+      <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Diplômes et certifications</div></Divider>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '2rem' }}>
         <div style={{ width: '519px', marginRight: '15rem' }}>
           <div style={{ display: "flex", justifyContent: 'flex-start' }}>
@@ -57,7 +57,7 @@ function DiplomeContent() {
           />
           <div style={{ margin: '0.5rem' }} />
           <List
-            header={<div style={style1}><SendOutlined style={{ marginRight: '1rem' }} />{"Une Maîtrise"}</div>}
+            header={<div style={style1}><SendOutlined style={{ marginRight: '1rem' }} />{"Une maîtrise"}</div>}
             bordered
             dataSource={data1}
             renderItem={item => { return <List.Item style={style}>{item}</List.Item> }}

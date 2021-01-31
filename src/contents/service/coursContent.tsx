@@ -13,7 +13,7 @@ const data0 = [
   "Technique d'assemblage et finition",
   "Petite retouche",
   "Retouche totale",
-  "Retouche aprofondie",
+  "Retouche approfondie",
   "Couture d'ameublement",
   "Couture artisanale"
 ]
@@ -52,7 +52,7 @@ function CoursContent() {
       <Divider />
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
         <div>
-          <div style={styles0}>{'Les prix des prestations'}</div>
+          <div style={styles0}>{'Le prix des prestations'}</div>
           <List
             header={<div>{"Pour les préstations du type A"}</div>}
             bordered

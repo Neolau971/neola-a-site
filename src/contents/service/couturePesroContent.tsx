@@ -7,18 +7,18 @@ import FooterComposent from "../../components/footer.composent";
 
 
 const data0 = [
-  "costume",
-  "chemise",
-  "corsages",
-  "jupes",
-  "pantalon",
-  "robe",
-  "short",
+  "Costume",
+  "Chemise",
+  "Corsage",
+  "Jupe",
+  "Pantalon",
+  "Robe",
+  "Short",
   "..."
 ]
 
 const data1 = [
-  "tout type de matière"
+  "Tout type de matière"
 ]
 
 const data2 = [
@@ -47,7 +47,7 @@ function CouturePersonaliseContent() {
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
         <img src={model} alt="model" style={{ marginTop: '5rem' }} />
         <div style={{ marginLeft: '15rem' }}>
-          <div style={styles0}>{"Les prestations proposés"}</div>
+          <div style={styles0}>{"Les prestations proposées"}</div>
           <List
             header={<div>{"Type de vêtement"}</div>}
             bordered
@@ -66,7 +66,7 @@ function CouturePersonaliseContent() {
       <Divider />
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
         <div>
-          <div style={styles0}>{'Les prix des prestations'}</div>
+          <div style={styles0}>{'Le prix des prestations'}</div>
           <List
             header={<div>{"Pour les préstations du type A"}</div>}
             bordered

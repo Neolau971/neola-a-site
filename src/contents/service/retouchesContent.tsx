@@ -9,20 +9,20 @@ import model2 from '../../pictures/model2.png'
 import FooterComposent from "../../components/footer.composent";
 
 const data0 = [
-  "retouche sur manteau, veste ou blazer",
-  "retouche sur pantalon",
-  "retouche sur t-shirt ou chemise",
-  "retouche sur vêtement endommagé"
+  "Retouche sur manteau, veste ou blazer",
+  "Retouche sur pantalon",
+  "Retouche sur t-shirt ou chemise",
+  "Retouche sur vêtement endommagé"
 ]
 
 const data1 = [
   "35 euros le vêtement",
-  "280 euros l'ensemble ,de 5 vêtements"
+  "280 euros l'ensemble de 5 vêtements"
 ]
 
 const data2 = [
   "35 euros le vêtement",
-  "280 euros l'ensemble ,de 5 vêtements"
+  "280 euros l'ensemble de 5 vêtements"
 ]
 
 const styles0 = {
@@ -40,7 +40,7 @@ function RetouchesContent() {
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
         <img src={model} alt="model" />
         <div style={{ marginLeft: '15rem' }}>
-          <div style={styles0}>{"Les retouches proposés"}</div>
+          <div style={styles0}>{"Les retouches proposées"}</div>
           <List
             header={<div><SkinOutlined style={{ fontSize: '1.5rem' }} /></div>}
             bordered
@@ -52,7 +52,7 @@ function RetouchesContent() {
       <Divider />
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
         <div>
-          <div style={styles0}>{'Les prix des prestations'}</div>
+          <div style={styles0}>{'Le prix des prestations'}</div>
           <List
             header={<div>{"Pour les préstations du type A"}</div>}
             bordered

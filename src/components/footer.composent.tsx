@@ -6,7 +6,7 @@ const FooterComposent: React.FC = () => {
   return (
     <>
       <Divider plain>
-        <div className='AppText'>Copyright Alietta Creation - Tous droits réservés</div>
+        <div className='AppText'>Copyright Alietta Creatiion - Tous droits réservés</div>
       </Divider>
       <div style={{
         display: 'inline-block',
