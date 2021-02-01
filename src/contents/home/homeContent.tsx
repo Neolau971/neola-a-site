@@ -4,15 +4,7 @@ import home from '../../pictures/home.jpg'
 import carou2 from '../../pictures/carou2.png'
 import defile_TLS from '../../pictures/defile_TLS.jpg'
 import FooterComposent from "../../components/footer.composent";
-
-const style = {
-  display: "flex",
-  justifyContent: 'center',
-  marginRight: '10rem',
-  marginLeft: '10rem',
-  marginBottom: '5rem',
-  marginTop: '5rem'
-}
+import "./homeContent.css"
 
 const style2 = {
   color: 'black',
@@ -55,7 +47,7 @@ const HomeContent: React.FC = () => {
     <div>
       <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Accueil</div></Divider>
       <div style={{ marginTop: '4rem' }}>
-        <div style={style}>
+        <div className="mainStyleHome">
           <img src={home} alt="home 1" style={{ width: '55%' }} />
           <div style={style2}>
             <Card size="small">
@@ -67,14 +59,9 @@ const HomeContent: React.FC = () => {
           </div>
         </div>
       </div>
-      <div style={{
-        display: 'inline-block',
-        background: 'linear-gradient(to right, lightskyblue, royalblue)',
-        width: '83%',
-        height: '6rem'
-      }} />
+      <div className="bandoStyleHome" />
       <div>
-        <div style={style}>
+        <div className="mainStyleHome">
           <div style={style3}>
             <Card size="small">
               <p>
@@ -86,14 +73,9 @@ const HomeContent: React.FC = () => {
           <img src={carou2} alt="carou2 " style={{ width: '55%' }} />
         </div>
       </div>
-      <div style={{
-        display: 'inline-block',
-        background: 'linear-gradient(to right, royalblue, midnightblue)',
-        width: '83%',
-        height: '6rem'
-      }} />
+      <div className="bandoStyleHome" />
       <div>
-        <div style={style}>
+        <div className="mainStyleHome">
           <img src={defile_TLS} alt="defile_TLS 1" style={{ width: '55%' }} />
           <div style={style2}>
             <Card size="small">

@@ -4,6 +4,7 @@ import React from "react"
 import model from '../../pictures/model.jpg'
 import model2 from '../../pictures/model2.png'
 import FooterComposent from "../../components/footer.composent";
+import './service.css'
 
 const data0 = [
   "transformation A",
@@ -35,9 +36,9 @@ function TransfoVetementsContent() {
   return (
     <div className="AppText">
       <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Transformation de vêtement</div></Divider>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
+      <div className="mainStyle">
         <img src={model} alt="model" />
-        <div style={{ marginLeft: '15rem' }}>
+        <div className="textMargin">
           <div style={styles0}>{"Les transformations proposées"}</div>
           <List
             header={<div>{"Type de transformation"}</div>}
@@ -48,7 +49,7 @@ function TransfoVetementsContent() {
         </div>
       </div>
       <Divider />
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
+      <div className="mainStyle">
         <div>
           <div style={styles0}>{'Le prix des prestations'}</div>
           <List
@@ -65,7 +66,7 @@ function TransfoVetementsContent() {
             renderItem={item => { return <List.Item>{item}</List.Item> }}
           />
         </div>
-        <img style={{ marginLeft: '20rem' }} src={model2} alt="model2" />
+        <img className="textMargin2" src={model2} alt="model2" />
       </div>
       <FooterComposent />
     </div>

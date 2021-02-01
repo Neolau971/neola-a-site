@@ -7,7 +7,7 @@ import {
 import model from '../../pictures/lampe.png'
 import model2 from '../../pictures/coussin.png'
 import FooterComposent from "../../components/footer.composent";
-
+import './service.css'
 const data0 = [
   "Rideaux et voilages",
   "Couture d'intérieur",
@@ -41,9 +41,9 @@ function CoutureArtisanalContent() {
   return (
     <div className="AppText">
       <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Couture d'ameublement et artisanale</div></Divider>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
+      <div className="mainStyle">
         <img src={model} alt="model" style={{ marginTop: '4rem' }} />
-        <div style={{ marginLeft: '15rem' }}>
+        <div className="textMargin">
           <div style={styles0}>{"Les coutures d'ameublement proposées"}</div>
           <List
             header={<div><ScissorOutlined style={{ fontSize: '1.5rem' }} /></div>}
@@ -54,7 +54,7 @@ function CoutureArtisanalContent() {
         </div>
       </div>
       <Divider />
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', margin: '5rem' }}>
+      <div className="mainStyle">
         <div>
           <div style={styles0}>{'Le prix des prestations'}</div>
           <List
@@ -71,7 +71,7 @@ function CoutureArtisanalContent() {
             renderItem={item => { return <List.Item>{item}</List.Item> }}
           />
         </div>
-        <img style={{ marginLeft: '15rem' }} src={model2} alt="model2" />
+        <img className="textMargin2" src={model2} alt="model2" />
       </div>
       <FooterComposent />
     </div>

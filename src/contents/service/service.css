@@ -1,0 +1,40 @@
+@media (max-width: 1030px) {
+  .mainStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1031px) {
+  .mainStyle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .textMargin {
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1031px) {
+  .textMargin {
+    margin-left: 10rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .textMargin2 {
+    margin-left: 10rem;
+  }
+}
+
+@media (min-width: 1031px) {
+  .textMargin2 {
+    margin-left: 18rem;
+  }
+}

@@ -1,0 +1,12 @@
+@media (max-width: 1030px) {
+  .mainWidth {
+    margin: 0.5rem;
+  }
+}
+
+@media (min-width: 1031px) {
+  .mainWidth {
+    margin: 9rem;
+    margin-left: 0.5rem;
+  }
+}

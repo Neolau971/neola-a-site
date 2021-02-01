@@ -1,0 +1,22 @@
+@media (max-width: 1030px) {
+  .mainStyleApropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 1031px) {
+  .mainStyleApropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 4rem;
+  }
+}
+

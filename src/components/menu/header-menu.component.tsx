@@ -10,7 +10,7 @@ import {
 } from '@ant-design/icons';
 import { Header } from "antd/lib/layout/layout"
 import { ScissorOutlined, SkinOutlined } from '@ant-design/icons';
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 type HeaderMenuProps = {
   handleContent: (key: string) => void
@@ -18,21 +18,31 @@ type HeaderMenuProps = {
 
 const HeaderMenuComponent: React.FC<HeaderMenuProps> = ({ handleContent }) => {
 
-  const serviceTitle = <div><ShoppingOutlined style={{ fontSize: '17px' }} />Services proposés</div>
+  const [isTextMenu, setIsTextMenu] = useState(true)
+
+  const serviceTitle = <div><ShoppingOutlined style={{ fontSize: '17px' }} />{isTextMenu && 'Services proposés'}</div>
 
   const handleClick = (e: any) => {
     handleContent(e.key)
   }
 
+  useEffect(() => {
+    if (window.screen.width < 1031) {
+      setIsTextMenu(false)
+    } else {
+      setIsTextMenu(true)
+    }
+  }, [])
+
   return (
     <Header style={{ padding: '0px' }}>
       <div style={{
         float: 'left',
-        width: '200px',
         height: '40px',
         backgroundColor: 'white',
         margin: '15px',
-        marginRight: '85px',
+        marginRight: '3rem',
+        marginLeft: '1.5rem',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
@@ -47,11 +57,11 @@ const HeaderMenuComponent: React.FC<HeaderMenuProps> = ({ handleContent }) => {
         defaultSelectedKeys={['Home']}
         onClick={handleClick}
       >
-        <Menu.Item key="Home"><HomeOutlined style={{ fontSize: '15px' }} />Accueil</Menu.Item>
-        <Menu.Item key="Apropos"><InfoCircleOutlined style={{ fontSize: '15px' }} />À propos</Menu.Item>
-        <Menu.Item key="Contacts"><PhoneOutlined style={{ fontSize: '15px' }} />Contacts</Menu.Item>
-        <Menu.Item key="Diplome"><FileDoneOutlined style={{ fontSize: '17px' }} />Diplômes</Menu.Item>
-        <Menu.Item key="Historic"><FolderOpenOutlined style={{ fontSize: '17px' }} />Historique de l'entreprise</Menu.Item>
+        <Menu.Item key="Home"><HomeOutlined style={{ fontSize: '15px' }} />{isTextMenu && 'Accueil'}</Menu.Item>
+        <Menu.Item key="Apropos"><InfoCircleOutlined style={{ fontSize: '15px' }} />{isTextMenu && 'À propos'}</Menu.Item>
+        <Menu.Item key="Contacts"><PhoneOutlined style={{ fontSize: '15px' }} />{isTextMenu && 'Contacts'}</Menu.Item>
+        <Menu.Item key="Diplome"><FileDoneOutlined style={{ fontSize: '17px' }} />{isTextMenu && 'Diplômes'}</Menu.Item>
+        <Menu.Item key="Historic"><FolderOpenOutlined style={{ fontSize: '17px' }} />{isTextMenu && "Historique de l'entreprise"}</Menu.Item>
         <SubMenu title={serviceTitle}>
           <Menu.Item key="couturePerso">Couture sur mesure et personnalisée</Menu.Item>
           <Menu.Item key="transfo">Transformation de vêtement</Menu.Item>

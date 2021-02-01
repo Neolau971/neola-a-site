@@ -6,6 +6,7 @@ import {
 
 import diplome from '../../pictures/diplome.jpg'
 import FooterComposent from "../../components/footer.composent"
+import "./diplome.css"
 
 const data0 = [
   "dans les métiers de la mode",
@@ -43,7 +44,7 @@ function DiplomeContent() {
     <div className="AppText">
       <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Diplômes et certifications</div></Divider>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '2rem' }}>
-        <div style={{ width: '519px', marginRight: '15rem' }}>
+        <div className="mainWidth">
           <div style={{ display: "flex", justifyContent: 'flex-start' }}>
             <img src={diplome} alt="diplome" />
           </div>

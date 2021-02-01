@@ -5,6 +5,7 @@ import mAtelier from '../../pictures/mAtelier.jpg'
 import mDefile1 from '../../pictures/mDefile1.png'
 import mPhoto from '../../pictures/mPhoto.jpg'
 import FooterComposent from "../../components/footer.composent"
+import './historicContent.css'
 
 const text0 = "Alietta CréatiiOn a été créé en 2011, à Sainte-Anne en Guadeloupe"
 const text1 = "avec pour but de promouvoir et développer le monde de la mode."
@@ -18,21 +19,12 @@ const styles = {
   fontSize: '1.2em'
 }
 
-const style = {
-  display: "flex",
-  justifyContent: 'center',
-  marginRight: '10rem',
-  marginLeft: '10rem',
-  marginBottom: '5rem',
-  marginTop: '5rem'
-}
-
 const style2 = {
   color: 'black',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  marginLeft: '15rem',
+  marginLeft: '8rem',
 }
 
 const style3 = {
@@ -40,7 +32,7 @@ const style3 = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  marginRight: '15rem'
+  marginRight: '8rem'
 }
 
 
@@ -49,63 +41,44 @@ function HistoricContent() {
     <div>
       <Divider plain><div className="AppText" style={{ fontSize: 'x-large' }}>Historique de l'entreprise</div></Divider>
       <div style={{ marginTop: '4rem' }}>
-        <div style={style}>
+        <div className="mainStyleHisto">
           <img src={mPhoto} alt="mPhoto" />
           <div style={style2}>
             <Card size="small">
               <p>
-                <div style={styles}>{text0}</div>
-                <div style={styles}>{text1}</div>
-                <div style={styles}>{text2}</div>
-                <div style={styles}>{text3}</div>
-                <div style={styles}>{text4}</div>
-                <div style={styles}>{text5}</div>
+                <div style={styles}>{text0} {text1}</div>
+                <div style={styles}>{text2} {text3}</div>
+                <div style={styles}>{text4} {text5}</div>
               </p>
             </Card>
           </div>
         </div>
       </div>
-      <div style={{
-        display: 'inline-block',
-        background: 'linear-gradient(to right, lightskyblue, royalblue)',
-        width: '78%',
-        height: '6rem'
-      }} />
+      <div className="bandoStyleHisto" />
       <div>
-        <div style={style}>
+        <div className="mainStyleHisto">
           <div style={style3}>
             <Card size="small">
               <p>
-                <div style={styles}>{text0}</div>
-                <div style={styles}>{text1}</div>
-                <div style={styles}>{text2}</div>
-                <div style={styles}>{text3}</div>
-                <div style={styles}>{text4}</div>
-                <div style={styles}>{text5}</div>
+                <div style={styles}>{text0} {text1}</div>
+                <div style={styles}>{text2} {text3}</div>
+                <div style={styles}>{text4} {text5}</div>
               </p>
             </Card>
           </div>
           <img src={mDefile1} alt="mDefile1 " />
         </div>
       </div>
-      <div style={{
-        display: 'inline-block',
-        background: 'linear-gradient(to right, royalblue, midnightblue)',
-        width: '78%',
-        height: '6rem'
-      }} />
+      <div className="bandoStyleHisto" />
       <div>
-        <div style={style}>
+        <div className="mainStyleHisto">
           <img src={mAtelier} alt="mAtelier" />
           <div style={style2}>
             <Card size="small">
               <p>
-                <div style={styles}>{text0}</div>
-                <div style={styles}>{text1}</div>
-                <div style={styles}>{text2}</div>
-                <div style={styles}>{text3}</div>
-                <div style={styles}>{text4}</div>
-                <div style={styles}>{text5}</div>
+                <div style={styles}>{text0} {text1}</div>
+                <div style={styles}>{text2} {text3}</div>
+                <div style={styles}>{text4} {text5}</div>
               </p>
             </Card>
           </div>
