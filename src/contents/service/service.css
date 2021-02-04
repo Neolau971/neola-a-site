@@ -10,7 +10,7 @@
   .mainStyle {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: 5rem;
   }
 }

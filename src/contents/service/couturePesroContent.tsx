@@ -22,20 +22,24 @@ const data1 = [
 ]
 
 const data2 = [
-  "35 euros le vêtement",
-  "280 euros l'ensemble de 5 vêtements"
+  "création à partir de 35 euros",
+  "les 3 pièces à partir de 280 euros"
 ]
 
 const data3 = [
-  "35 euros le vêtement",
-  "280 euros l'ensemble de 5 vêtements"
+  "création à partir de 100 euros",
+  "280 euros l'ensemble de 3 vêtements"
+]
+
+const data4 = [
+  "tarifs varié en fonction de la commande"
 ]
 
 
 const styles0 = {
   margin: '20px',
   fontSize: '1.3rem',
-  marginBottom: '3rem',
+  marginBottom: '2rem',
   display: 'flex',
   justifyContent: 'flex-start'
 }
@@ -68,16 +72,23 @@ function CouturePersonaliseContent() {
         <div>
           <div style={styles0}>{'Le prix des prestations'}</div>
           <List
-            header={<div>{"Pour les préstations du type A"}</div>}
+            header={<div>{"Pour les créations"}</div>}
             bordered
             dataSource={data2}
             renderItem={item => { return <List.Item>{item}</List.Item> }}
           />
           <div style={{ margin: '2rem' }} />
           <List
-            header={<div>{"Pour les préstations du type B"}</div>}
+            header={<div>{"Pour les vêtements de haute gamme"}</div>}
             bordered
             dataSource={data3}
+            renderItem={item => { return <List.Item>{item}</List.Item> }}
+          />
+          <div style={{ margin: '2rem' }} />
+          <List
+            header={<div>{"Pour les tenues de galas"}</div>}
+            bordered
+            dataSource={data4}
             renderItem={item => { return <List.Item>{item}</List.Item> }}
           />
         </div>

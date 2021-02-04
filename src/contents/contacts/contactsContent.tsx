@@ -3,7 +3,8 @@ import {
   HomeOutlined,
   PhoneOutlined,
   MailOutlined,
-  FacebookOutlined
+  FacebookOutlined,
+  FileDoneOutlined
 } from '@ant-design/icons';
 import React from "react"
 
@@ -17,6 +18,7 @@ const text2 = "91780 Sainte-Anne Guadeloupe"
 const text3 = "Tel : 0690 59 41 34 - 0690 19 41 30"
 const text4 = "Mail : alietta.creatiion@gmail.com"
 const text5 = 'Facebook : '
+const text6 = 'N° SIRET : 53402532500018 A'
 
 const styles = {
   margin: '20px',
@@ -37,6 +39,8 @@ function ContactContent() {
           <HomeOutlined style={iconStyle} />
           <div style={styles}>{text1}</div>
           <div style={styles}>{text2}</div>
+          <FileDoneOutlined style={iconStyle} />
+          <div style={styles}>{text6}</div>
           <PhoneOutlined style={iconStyle} />
           <div style={styles}>{text3}</div>
           <MailOutlined style={iconStyle} />

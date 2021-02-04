@@ -20,7 +20,7 @@ const data0 = [
 ]
 
 const data1 = [
-  "35 euros le cours",
+  "cours à partir de 10 euros",
   "280 euros le mois"
 ]
 
@@ -55,14 +55,14 @@ function CoursContent() {
         <div>
           <div style={styles0}>{'Le prix des prestations'}</div>
           <List
-            header={<div>{"Pour les préstations du type A"}</div>}
+            header={<div>{"Pour débutant"}</div>}
             bordered
             dataSource={data1}
             renderItem={item => { return <List.Item>{item}</List.Item> }}
           />
           <div style={{ margin: '2rem' }} />
           <List
-            header={<div>{"Pour les préstations du type B"}</div>}
+            header={<div>{"Pour confirmé"}</div>}
             bordered
             dataSource={data2}
             renderItem={item => { return <List.Item>{item}</List.Item> }}
